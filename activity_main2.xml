@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity2">
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/btn_feed"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        android:text="Feed"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_image" />
+
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="116dp"
+        android:text="Clean"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_feed"
+        app:layout_constraintTop_toBottomOf="@+id/pet_image" />
+
+    <!-- Status values -->
+
+    <Button
+        android:id="@+id/btn_happy"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:text="Happy"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_clean"
+        app:layout_constraintTop_toBottomOf="@+id/pet_image" />
+
+    <TextView
+            android:id="@+id/txt_hunger"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:text="Hungry"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_feed" />
+
+        <TextView
+            android:id="@+id/txt_clean"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="36dp"
+            android:text="Clean"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hunger" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="36dp"
+            android:text="Happy"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_clean" />
+
+        <!-- Edit texts for status values -->
+
+        <EditText
+            android:id="@+id/txt_happy"
+            android:layout_width="159dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.777"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toBottomOf="@+id/txt_clean_value" />
+
+        <EditText
+            android:id="@+id/txt_hungry_value"
+            android:layout_width="159dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/txt_hunger"
+            app:layout_constraintTop_toBottomOf="@+id/btn_clean" />
+
+        <EditText
+            android:id="@+id/txt_clean_value"
+            android:layout_width="159dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.83"
+            app:layout_constraintStart_toEndOf="@+id/txt_clean"
+            app:layout_constraintTop_toBottomOf="@+id/txt_hungry_value" />
+
+    <!-- Pet image -->
+    <ImageView
+        android:id="@+id/pet_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/img_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
